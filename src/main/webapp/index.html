@@ -1,18 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>App Engine Demo</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="result">Loading...</div>
+<body>
 
-    <script>
-$(document).ready(function() {
-  $.getJSON('/demo', function(data) {
-    $('#result').html("Hello, " + data.name);
-  });
-});
-    </script>
-  </body>
+<p>Click the button to set the href value to https://www.w3schools.com.</p>
+
+<button onclick="myFunction()">Take me to w3schools.com</button>
+<button onclick="myFunction2()">Take me to w3schools.com</button>
+<button onclick="myFunction3()">Take me to w3schools.com</button>
+<button onclick="myFunction4()">Take me to w3schools.com</button>
+<button onclick="myFunction5()">Take me to w3schools.com</button>
+
+ <script type="text/javascript" charset="utf-8"> 
+function myFunction() {
+  location.href = "https://www.w3schools.com";
+}
+function myFunction2() {
+  window.location.href = "https://www.w3schools.com";
+}
+function myFunction3() {
+  window.location = "https://www.w3schools.com";
+}
+function myFunction4() {
+  location.replace = "https://www.w3schools.com";
+}
+function myFunction5() {
+  window.location.replace = "https://www.w3schools.com";
+}
+</script>
+<form action="www.google.com">
+<input type="submit" value="GOOOO"/>
+</form>
+</body>
 </html>
+
+
+
